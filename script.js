@@ -180,3 +180,50 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountUp();
   initFloatPulse();
 });
+
+/* ===== スピーチバブル ===== */
+const initSpeechBubbles = () => {
+  const area = document.getElementById('speechBubbleArea');
+  if (!area) return;
+
+  const messages = [
+    'ずっと気になってる…',
+    '連絡したいけど、できない',
+    '本当はまだ好きなんだ',
+    '会いたい',
+    'あの人、今何してるんだろう',
+    '忘れようとしても忘れられない',
+    'もう一度だけ話したい',
+    '嫌いじゃないのに、なぜか離れてしまった',
+    'また会える日が来るのかな',
+    '気持ちを伝えられなかった…',
+    '本当は寂しい',
+    'あなたのことが頭から離れない',
+    'まだ縁があると思いたい',
+    '素直になれなかった',
+    'あの時、もっとちゃんと言えばよかった',
+  ];
+
+  const spawn = () => {
+    const el = document.createElement('div');
+    el.className = 's-bubble';
+    el.textContent = messages[Math.floor(Math.random() * messages.length)];
+
+    const areaW = area.offsetWidth;
+    const duration = 4.5 + Math.random() * 3.5;
+    const leftPct = 5 + Math.random() * 85;
+
+    el.style.left = leftPct + '%';
+    el.style.animationDuration = duration + 's';
+    el.style.fontSize = (0.72 + Math.random() * 0.22) + 'rem';
+    el.style.opacity = '0';
+
+    area.appendChild(el);
+    el.addEventListener('animationend', () => el.remove());
+  };
+
+  spawn();
+  setInterval(spawn, 1400);
+};
+
+document.addEventListener('DOMContentLoaded', initSpeechBubbles);
