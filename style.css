@@ -638,6 +638,21 @@ ul { list-style: none; }
   gap: 1.5rem;
   margin-bottom: 1.8rem;
 }
+.menu-grid-single {
+  grid-template-columns: 1fr;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-card-single {
+  padding: 3rem 2.5rem;
+}
+.menu-card-single h3 {
+  font-size: 1.5rem;
+}
+.menu-card-single .menu-price {
+  font-size: 2rem;
+}
 .menu-card {
   background: var(--navy-card);
   border: 1px solid var(--border);
