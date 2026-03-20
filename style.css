@@ -577,7 +577,7 @@ ul { list-style: none; }
 }
 .chat-bubble p { color: var(--text-white); font-size: 0.87rem; line-height: 1.95; margin-bottom: 0.4rem; }
 .chat-bubble p:last-child { margin-bottom: 0; }
-.highlight-bubble { border-left: 2px solid var(--gold); }
+.highlight-bubble { }
 .chat-underline {
   text-decoration: underline;
   text-decoration-color: var(--gold);
