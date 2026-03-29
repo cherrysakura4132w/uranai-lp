@@ -927,3 +927,60 @@ ul { list-style: none; }
   80%  { opacity: 0.85; }
   100% { opacity: 0; transform: translateY(-320px) scale(0.95); }
 }
+
+/* ===== 透視鑑定セクション ===== */
+.toshin-section {
+  padding: 4rem 0;
+  background: var(--bg-deep, #0a0a1a);
+}
+.toshin-card-link {
+  text-decoration: none;
+  display: block;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.toshin-card {
+  background: linear-gradient(135deg, #12122a 0%, #1a1a3a 100%);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.toshin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(212,175,55,0.2);
+}
+.toshin-icon {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.toshin-title {
+  font-size: 1.5rem;
+  color: #d4af37;
+  font-family: 'Shippori Mincho', serif;
+  margin-bottom: 1rem;
+}
+.toshin-desc {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.toshin-price {
+  font-size: 2rem;
+  color: #d4af37;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  font-family: 'Shippori Mincho', serif;
+}
+.toshin-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #d4af37, #f0d060);
+  color: #1a1a2e;
+  font-weight: 700;
+  padding: 0.85rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
