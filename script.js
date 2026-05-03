@@ -109,6 +109,8 @@ const initSparkle = () => {
 const initStarfall = () => {
   const hero = document.querySelector('.hero');
   if (!hero) return;
+  const overlay = hero.querySelector('.hero-overlay');
+  if (!overlay) return;
 
   const createStar = () => {
     const star = document.createElement('span');
@@ -124,7 +126,7 @@ const initStarfall = () => {
       animation: twinkle ${3 + Math.random() * 4}s ease-in-out ${Math.random() * 5}s infinite alternate;
       pointer-events: none;
     `;
-    hero.querySelector('.hero-overlay').appendChild(star);
+    overlay.appendChild(star);
   };
 
   for (let i = 0; i < 40; i++) {
