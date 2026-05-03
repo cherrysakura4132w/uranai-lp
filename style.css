@@ -854,6 +854,23 @@ ul { list-style: none; }
   text-align: center;
   padding: 0 1.5rem;
 }
+.gw-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+.gw-limit {
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.gw-arrow {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin: 0.5rem 0;
+}
 .gw-label {
   font-size: 0.75rem;
   letter-spacing: 0.2em;
