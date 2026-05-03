@@ -841,6 +841,108 @@ ul { list-style: none; }
 ::-webkit-scrollbar-track { background: var(--navy); }
 ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
 
+/* ===== GW特別告知 ===== */
+.gw-campaign {
+  background: linear-gradient(135deg, #0D1628 0%, #152038 50%, #0D1628 100%);
+  padding: 4rem 0;
+  border-top: 1px solid var(--gold-dark);
+  border-bottom: 1px solid var(--gold-dark);
+}
+.gw-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+.gw-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+.gw-lead {
+  font-size: 1.1rem;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+}
+.gw-text {
+  font-size: 0.95rem;
+  color: #D4C5A0;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+.gw-voices {
+  background: rgba(201,168,76,0.08);
+  border-left: 3px solid var(--gold);
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  text-align: left;
+  max-width: 320px;
+  border-radius: 0 8px 8px 0;
+}
+.gw-voices p {
+  color: var(--text-white);
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.gw-voices p:last-child { margin-bottom: 0; }
+.gw-highlight {
+  font-size: 1.05rem;
+  color: var(--text-white);
+  line-height: 1.9;
+  margin: 1.2rem 0;
+}
+.gw-highlight strong {
+  color: var(--gold-light);
+  font-size: 1.15rem;
+}
+.gw-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold-dark);
+  margin: 1.5rem auto;
+}
+.gw-items {
+  font-size: 1rem;
+  color: var(--gold-light);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.gw-price {
+  font-size: 1.1rem;
+  color: var(--text-white);
+  margin: 1rem 0;
+}
+.gw-price span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+}
+.gw-questions {
+  margin: 1rem 0;
+}
+.gw-questions p {
+  font-size: 1rem;
+  color: var(--text-white);
+  margin-bottom: 0.4rem;
+}
+.gw-sub {
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin: 1.2rem 0;
+  line-height: 1.8;
+}
+.gw-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.gw-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.8rem;
+}
+
 /* ===== ヒーロー 装飾テキスト ===== */
 .hero-content::before {
   content: '✦  SPIRITUAL READING  ✦';
