@@ -855,7 +855,7 @@ ul { list-style: none; }
   padding: 0 1.5rem;
 }
 .gw-title {
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 6vw, 1.8rem);
   font-weight: 700;
   color: var(--gold);
   margin: 0.5rem 0;
