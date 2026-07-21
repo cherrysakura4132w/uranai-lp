@@ -1,41 +1,42 @@
 /* ===========================
    みらい 霊視占い師 LP
-   濃紺 × ゴールド × 神秘・高級
+   ゴールド背景 × 紺色文字 × 神秘・高級
+   （--gold系トークンには紺色、--navy系トークンには金色の値が入っています）
    =========================== */
 
 /* ===== リセット & 基本 ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* ゴールド */
-  --gold: #C9A84C;
-  --gold-light: #F0D080;
-  --gold-pale: #F8ECC0;
-  --gold-dark: #9A7830;
-  --gold-grad: linear-gradient(135deg, #9A7830 0%, #F0D080 45%, #C9A84C 75%, #9A7830 100%);
-  --gold-grad-h: linear-gradient(90deg, #9A7830 0%, #F0D080 50%, #9A7830 100%);
+  /* 紺色（アクセント・文字） */
+  --gold: #16233F;
+  --gold-light: #0A1424;
+  --gold-pale: #24365C;
+  --gold-dark: #2C4066;
+  --gold-grad: linear-gradient(135deg, #0A1424 0%, #2C4066 45%, #16233F 75%, #0A1424 100%);
+  --gold-grad-h: linear-gradient(90deg, #0A1424 0%, #2C4066 50%, #0A1424 100%);
 
-  /* 濃紺ベース */
-  --navy: #080F1E;
-  --navy-mid: #0D1628;
-  --navy-light: #152038;
-  --navy-card: #111D35;
-  --navy-hover: #1A2A48;
+  /* ゴールドベース */
+  --navy: #E9C46A;
+  --navy-mid: #EDCD80;
+  --navy-light: #F2D793;
+  --navy-card: #F7E2AC;
+  --navy-hover: #D9AE4E;
 
   /* テキスト */
-  --text: #F0D080;
-  --text-sub: #C9A84C;
-  --text-muted: #9A8060;
-  --text-white: #FDF8EE;
+  --text: #16233F;
+  --text-sub: #2C4066;
+  --text-muted: #55637E;
+  --text-white: #0A1424;
 
   /* ボーダー */
-  --border: rgba(201,168,76,0.2);
-  --border-strong: rgba(201,168,76,0.45);
+  --border: rgba(22,35,63,0.22);
+  --border-strong: rgba(22,35,63,0.48);
 
   /* シャドウ */
-  --shadow: 0 4px 24px rgba(0,0,0,0.5);
-  --shadow-gold: 0 4px 24px rgba(201,168,76,0.2);
-  --shadow-gold-strong: 0 8px 48px rgba(201,168,76,0.35);
+  --shadow: 0 4px 24px rgba(0,0,0,0.18);
+  --shadow-gold: 0 4px 24px rgba(22,35,63,0.18);
+  --shadow-gold-strong: 0 8px 48px rgba(22,35,63,0.32);
 
   --font: 'Noto Serif JP','Yu Mincho','Georgia',serif;
   --sans: 'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
@@ -151,7 +152,7 @@ ul { list-style: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(8, 15, 30, 0.92);
+  background: rgba(233, 196, 106, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 0;
@@ -195,12 +196,12 @@ ul { list-style: none; }
   text-align: center;
   overflow: hidden;
   padding: 110px 24px 80px;
-  background: radial-gradient(ellipse at 50% 0%, #152038 0%, #0D1628 40%, #080F1E 100%);
+  background: radial-gradient(ellipse at 50% 0%, #F2D793 0%, #EDCD80 40%, #E9C46A 100%);
 }
 .hero-bg-glow {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(ellipse at 50% 20%, rgba(201,168,76,0.1) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 20%, rgba(22,35,63,0.08) 0%, transparent 55%),
     radial-gradient(ellipse at 20% 80%, rgba(100,70,180,0.06) 0%, transparent 45%),
     radial-gradient(ellipse at 80% 70%, rgba(50,100,200,0.06) 0%, transparent 45%);
   animation: heroGlow 8s ease-in-out infinite alternate;
@@ -212,7 +213,7 @@ ul { list-style: none; }
   position: absolute;
   display: block;
   border-radius: 50%;
-  background: rgba(240,208,128,0.85);
+  background: rgba(22,35,63,0.65);
   animation: starFloat 7s ease-in-out infinite;
 }
 .hero-stars span:nth-child(1){width:2px;height:2px;top:8%;left:12%;animation-delay:0s}
@@ -843,7 +844,7 @@ ul { list-style: none; }
 
 /* ===== GW特別告知 ===== */
 .gw-campaign {
-  background: linear-gradient(135deg, #0D1628 0%, #152038 50%, #0D1628 100%);
+  background: linear-gradient(135deg, #EDCD80 0%, #F2D793 50%, #EDCD80 100%);
   padding: 4rem 0;
   border-top: 1px solid var(--gold-dark);
   border-bottom: 1px solid var(--gold-dark);
@@ -885,7 +886,7 @@ ul { list-style: none; }
 }
 .gw-text {
   font-size: 0.95rem;
-  color: #D4C5A0;
+  color: #4A5A78;
   line-height: 1.9;
   margin-bottom: 1rem;
 }
@@ -1019,8 +1020,8 @@ ul { list-style: none; }
 .s-bubble {
   position: absolute;
   bottom: -60px;
-  background: rgba(201,168,76,0.12);
-  border: 1px solid rgba(201,168,76,0.35);
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(22,35,63,0.3);
   color: var(--gold-light);
   font-family: var(--font);
   font-size: 0.82rem;
@@ -1039,7 +1040,7 @@ ul { list-style: none; }
   transform: translateX(-50%);
   border-width: 7px 5px 0;
   border-style: solid;
-  border-color: rgba(201,168,76,0.35) transparent transparent;
+  border-color: rgba(255,255,255,0.4) transparent transparent;
 }
 @keyframes bubbleFloat {
   0%   { opacity: 0; transform: translateY(0) scale(0.85); }
@@ -1051,7 +1052,7 @@ ul { list-style: none; }
 /* ===== 透視鑑定セクション ===== */
 .toshin-section {
   padding: 4rem 0;
-  background: var(--bg-deep, #0a0a1a);
+  background: var(--navy);
 }
 .toshin-card-link {
   text-decoration: none;
